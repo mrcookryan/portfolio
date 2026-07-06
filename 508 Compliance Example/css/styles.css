@@ -1,0 +1,90 @@
+:root {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --font: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+figure img {
+  max-width: 100%;         
+  height: auto;            
+  object-fit: contain;     
+  display: block;
+  border-radius: 0.5rem;    
+}
+
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-dark);
+}
+
+.cta {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.cta:hover,
+.cta:focus {
+  background: var(--accent-dark);
+}
+
+.high-contrast {
+  color: var(--text);
+}
+
+/* Visible focus */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}

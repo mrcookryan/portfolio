@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Web Module</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Accessible Web Learning Module</h1>
+    <p>Practice WCAG-aligned interactive content with semantic HTML and responsive CSS.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+      <p>
+        This module demonstrates accessible patterns: semantic structure, keyboard-friendly controls,
+        proper labeling, and responsive layout.
+      </p>
+    </section>
+
+    <section aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Quick Knowledge Check</h2>
+
+      <form id="quiz-form" aria-describedby="quiz-desc">
+        <p id="quiz-desc">
+          Answer the question below using keyboard or mouse. Feedback is announced to assistive tech.
+        </p>
+
+        <fieldset>
+          <legend>Which of the following improves accessibility?</legend>
+
+          <div class="option">
+            <input type="radio" id="opt1" name="answer" value="a">
+            <label for="opt1">Using semantic HTML elements like &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="opt2" name="answer" value="b">
+            <label for="opt2">Relying only on color to convey meaning</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="opt3" name="answer" value="c">
+            <label for="opt3">Removing focus outlines for aesthetic reasons</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Check answer</button>
+
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Resources</h2>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG 2.1 Guidelines</a></li>
+        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Accessible Web Module Demo</p>
+  </footer>
+
+  <script src="js/module.js"></script>
+</body>
+</html>

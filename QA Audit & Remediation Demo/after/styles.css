@@ -1,0 +1,50 @@
+:root {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --font: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cta {
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.cta:hover,
+.cta:focus {
+  background: var(--accent-dark);
+}
+
+.high-contrast {
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
