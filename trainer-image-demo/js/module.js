@@ -1,10 +1,3 @@
-const btn = document.getElementById('action-btn');
-const feedback = document.getElementById('action-feedback');
-
-btn.addEventListener('click', () => {
-  feedback.textContent = 'Action activated successfully.';
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', (event) => {
     const target = event.target;
