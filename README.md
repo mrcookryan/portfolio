@@ -2,7 +2,7 @@
 
 
 
-This portfolio contains a curated set of professional demos showcasing Web Systems fundamentals, accessibility compliance, responsive design, QA auditing, and instructional UI patterns.  
+This portfolio contains a curated set of professional demos showcasing Web Systems fundamentals, accessibility compliance, responsive design, QA auditing, and instructional UI patterns.
 
 Each project is self-contained, documented, and built with semantic HTML, modern CSS, and clean structure.
 
@@ -24,17 +24,17 @@ These examples represent practical, real-world scenarios aligned with Section 50
 
 A fully accessible demo illustrating:
 
-\- semantic structure  
+\- semantic structure
 
-\- alt text patterns  
+\- alt text patterns
 
-\- keyboard navigation  
+\- keyboard navigation
 
-\- ARIA live regions  
+\- ARIA live regions
 
-\- color contrast compliance  
+\- color contrast compliance
 
-\- validation-ready layout  
+\- validation-ready layout
 
 
 
@@ -50,15 +50,15 @@ This example demonstrates practical Section 508 + WCAG 2.1 AA alignment.
 
 A modular training component showing:
 
-\- accessible headings  
+\- accessible headings
 
-\- structured content blocks  
+\- structured content blocks
 
-\- responsive layout  
+\- responsive layout
 
-\- keyboard-friendly interactions  
+\- keyboard-friendly interactions
 
-\- instructor image with proper figure/figcaption  
+\- instructor image with proper figure/figcaption
 
 
 
@@ -74,15 +74,15 @@ Built as a reusable pattern for instructional or LMS environments.
 
 A clean landing page optimized for:
 
-\- clarity and hierarchy  
+\- clarity and hierarchy
 
-\- responsive layout  
+\- responsive layout
 
-\- mobile-first design  
+\- mobile-first design
 
-\- simple navigation  
+\- simple navigation
 
-\- training module entry points  
+\- training module entry points
 
 
 
@@ -98,23 +98,23 @@ Represents a modern, lightweight digital learning front-end.
 
 A three-part demo including:
 
-\- \*\*before\*\* (issues documented)  
+\- \*\*before\*\* (issues documented)
 
-\- \*\*audit\*\* (findings, screenshots, notes)  
+\- \*\*audit\*\* (findings, screenshots, notes)
 
-\- \*\*after\*\* (remediated version)  
+\- \*\*after\*\* (remediated version)
 
 
 
 Shows your ability to:
 
-\- identify accessibility + structural issues  
+\- identify accessibility + structural issues
 
-\- document findings  
+\- document findings
 
-\- implement fixes  
+\- implement fixes
 
-\- verify post-update behavior  
+\- verify post-update behavior
 
 
 
@@ -130,13 +130,13 @@ This is extremely valuable for Web Systems + Accessibility roles.
 
 A simple, isolated demo showing:
 
-\- proper image usage  
+\- proper image usage
 
-\- alt text  
+\- alt text
 
-\- figure/figcaption pairing  
+\- figure/figcaption pairing
 
-\- responsive scaling  
+\- responsive scaling
 
 
 
@@ -152,15 +152,15 @@ Useful as a standalone accessibility pattern.
 
 A foundational systems example demonstrating:
 
-\- DNS  
+\- DNS
 
-\- Apache  
+\- Apache
 
-\- routing  
+\- routing
 
-\- hosting fundamentals  
+\- hosting fundamentals
 
-\- environment structure  
+\- environment structure
 
 
 
@@ -180,7 +180,7 @@ View all demos in the browser:
 
 
 
-\*\*https://mrcookryan.github.io/portfolio/\*\*
+https://mrcookryan.github.io/portfolio
 
 
 
@@ -192,17 +192,17 @@ View all demos in the browser:
 
 
 
-\- Semantic HTML  
+\- Semantic HTML
 
-\- Modern CSS (Flexbox, Grid)  
+\- Modern CSS (Flexbox, Grid)
 
-\- No frameworks  
+\- No frameworks
 
-\- Accessibility-first patterns  
+\- Accessibility-first patterns
 
-\- Web Systems fundamentals  
+\- Web Systems fundamentals
 
-\- Optional global demo-mode JS  
+\- Optional global demo-mode JS
 
 
 
@@ -215,8 +215,4 @@ View all demos in the browser:
 
 
 Created by \*\*Ryan Cook — Front-End \& Web Systems Developer\*\* — as part of a professional portfolio demonstrating accessible UI patterns, QA remediation, digital learning interfaces, and foundational web systems work.
-
-
-
-
 
