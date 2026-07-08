@@ -28,13 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Only intercept real interactive elements
     if (
-      target.matches('a[href]') ||
-      target.matches('button') ||
-      target.closest('a[href]') ||
-      target.closest('button')
+      target.matches('a[href]') || target.closest('a[href]')
     ) {
       event.preventDefault();
-      alert('Demo purposes only — this action is not functional.');
+      alert('Links are demo purposes only — this action is not functional.');
     }
   });
 });
