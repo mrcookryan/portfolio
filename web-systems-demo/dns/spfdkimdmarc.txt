@@ -1,0 +1,28 @@
+# SPF — Sender Policy Framework
+# Allows only the mail server to send email for this domain.
+
+example.com. IN TXT "v=spf1 mx -all"
+
+
+# DKIM — DomainKeys Identified Mail
+# Public key used to verify signed email from the mail server.
+# Selector: default
+
+default._domainkey.example.com. IN TXT (
+  "v=DKIM1; k=rsa; "
+  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnteyYkc9xv7SPIuO+DnFhZtdnM3QMMLqyZehatQaq4BdIhzD0eMtyfLc5kkoHtXS/"
+  "wtH7slhW8oW2d4vy2axWLSaXftMBYt6dEhjjCB7Rj7lQD0geZic5E2+4NTmOxfCf7p9RADsj/vF2TNhawEHp3qiLuzMmeoa/G9ZAnu1Jhuzo5i"
+  "IKk4X8YRGUzd+3QH1X6Bgi4bFWSxlI5t6ujQcbN7rrDG63VgUm8O87FnYg1Hjg4V8oB9wD7w4tyRarDxP07xIDUIi23duiiHGuRIC91QlRW+9N"
+  "dYjSt7a0Ub42SqA15GOHonZQCqELP8n/37FKWoXCJ5cS+t5i5PJvNcURwIDAQAB"
+)
+
+
+# DMARC — Domain-based Message Authentication, Reporting & Conformance
+# Enforces alignment between SPF/DKIM and the From: domain.
+# Policy: reject failing mail
+# Aggregate reports sent to: admin@example.com
+
+_dmarc.example.com. IN TXT (
+  "v=DMARC1; p=reject; rua=mailto:admin@example.com; "
+  "pct=100; adkim=s; aspf=s"
+)
