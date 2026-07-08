@@ -1,0 +1,107 @@
+# Hosting Notes — Web Systems Demo
+
+These notes provide additional context for how hosting environments behave in real deployments and how they support the rest of the Web Systems Demo.
+
+
+# Shared Hosting vs VPS
+Shared hosting:
+- Multiple customers on one server
+- Limited control over configuration
+- Good for small sites, low traffic
+
+VPS (Virtual Private Server):
+- Dedicated resources
+- Full control over server configuration
+- Required for custom Apache/Nginx setups
+- Better performance and security
+
+
+# File Structure
+Common layouts:
+- /var/www/example.com/
+- /var/www/example.com/public_html/
+- /var/www/example.com/logs/
+- /var/www/example.com/backups/
+
+Public files belong in the document root.
+Private files should be stored outside the public directory.
+
+
+# Permissions
+Typical Linux permissions:
+- Files: 644 (rw-r--r--)
+- Directories: 755 (rwxr-xr-x)
+
+Ownership:
+- www-data (Apache/Nginx user)
+- root (system-level files)
+- user account (deployment owner)
+
+Incorrect permissions often cause:
+- 403 Forbidden
+- inability to write logs
+- broken uploads
+
+
+# Logs
+Two primary log types:
+
+Access logs:
+- /var/log/apache2/access.log
+- Shows requests, status codes, user agents
+
+Error logs:
+- /var/log/apache2/error.log
+- Shows configuration issues, PHP errors, permission problems
+
+Logs are essential for debugging routing, SSL, and rewrite rules.
+
+
+# Backups
+Recommended backup strategy:
+- Daily file backups
+- Daily or weekly database backups
+- Off-server storage (S3, Backblaze, etc.)
+- Retention window (7–30 days)
+
+Backups should include:
+- public_html
+- configuration files
+- SSL certificates
+- database dumps
+
+
+# SSL Certificates
+Common sources:
+- Let’s Encrypt (free)
+- Paid certificates (GoDaddy, Namecheap, DigiCert)
+
+Key files:
+- certificate.crt
+- private.key
+- chain.pem
+
+SSL must be validated before enabling HSTS.
+
+
+# Deployment Workflow
+Hosting is where deployments actually happen.
+
+Typical steps:
+1. Upload files or pull from Git
+2. Validate Apache/Nginx config
+3. Restart server safely
+4. Test redirects and routing
+5. Verify SSL
+6. Check logs for errors
+
+
+# Relationship to DNS / Apache / Routing
+Hosting is the environment everything else depends on:
+
+- DNS → points the domain to the server
+- Hosting → provides the filesystem, permissions, and runtime
+- Apache/Nginx → serves the site and handles routing
+- Routing → directs requests to the correct resources
+
+Hosting is the backbone of the Web Systems Demo.

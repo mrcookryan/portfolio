@@ -77,6 +77,7 @@ button:focus {
 .feedback {
   margin-top: 1rem;
   font-weight: 600;
+  min-height: 60px;
 }
 
 .feedback--error {
