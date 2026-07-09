@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painting Company — About</title>
+  <link rel="stylesheet" href="global/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="global/img/logo.webp" width="200">
+        <span class="tagline">Professional painting services inside and out</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggleAbout" aria-expanded="false" aria-controls="mainNavAbout">☰</button>
+
+      <nav id="mainNavAbout" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-intro">
+      <div class="container">
+        <h1>About Painting Company</h1>
+	<img src="global/img/about.webp">
+        <p>We provide professional painting services for residential and commercial clients. Our team focuses on quality workmanship, clear communication, and durable finishes.</p>
+      </div>
+    </section>
+
+    <section class="areas">
+      <div class="container">
+        <h2>Areas of Work</h2>
+        <ul class="areas-list">
+          <li>Interior and exterior painting</li>
+          <li>Deck and wood maintenance (stain or paint)</li>
+          <li>Caulking and trim work</li>
+          <li>Drywall repair and surface preparation</li>
+          <li>Power washing and surface cleaning</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="references">
+      <div class="container">
+        <h2>References</h2>
+        <p>References available upon request. We work with homeowners, property managers, and local businesses to deliver consistent results.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="yearAbout"></span> Painting Company. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('navToggleAbout');
+      const nav = document.getElementById('mainNavAbout');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+      document.getElementById('yearAbout').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

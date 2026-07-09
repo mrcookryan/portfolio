@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painting Company — Home</title>
+  <link rel="stylesheet" href="global/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="global/img/logo.webp" width="200">
+        <span class="tagline">Professional painting services inside and out</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="mainNav" class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Quality Painting. Lasting Results.</h1>
+          <p class="lead">Interior and exterior painting, deck maintenance, drywall repair, and more — tailored to your project.</p>
+          <a class="btn btn-primary" href="contact.html">Request a Free Estimate</a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+         <img src="global/img/hero.webp">
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <article class="service">
+            <h3>Residential Painting</h3>
+            <p>Full interior and exterior painting for homes, including trim, doors, and cabinetry.</p>
+          </article>
+
+          <article class="service">
+            <h3>Commercial Painting</h3>
+            <p>Flexible solutions for businesses, property managers, and multi-unit buildings.</p>
+          </article>
+
+          <article class="service">
+            <h3>Deck & Wood Care</h3>
+            <p>Staining, sealing, and repair to protect outdoor wood surfaces and extend lifespan.</p>
+          </article>
+
+          <article class="service">
+            <h3>Surface Prep & Repair</h3>
+            <p>Caulking, drywall repair, power washing, and surface preparation for long-lasting finishes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <p><strong>Free estimates</strong> and project consultations. Licensed and insured.</p>
+        <a class="btn btn-outline" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Painting Company. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small script for mobile nav toggle
+    (function () {
+      const btn = document.getElementById('navToggle');
+      const nav = document.getElementById('mainNav');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

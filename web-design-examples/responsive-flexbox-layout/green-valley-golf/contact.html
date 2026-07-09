@@ -1,0 +1,91 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="global/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+        <div class="logo">GVC</div>
+        <div>
+          <div class="title">Green Valley Community Golf Day</div>
+          <div class="subtitle">Contact</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">HOME</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="contact.html" class="active">CONTACT</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="content card">
+        <h2>Sponsorship and General Inquiry</h2>
+        <p class="small">To sponsor a hole or for general inquiry please complete the form. IMPORTANT: Please enter a valid email.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="cname">First & Last Name *</label>
+            <input id="cname" name="cname" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="company">Company Name</label>
+            <input id="company" name="company" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="cemail">Email *</label>
+            <input id="cemail" name="cemail" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="type">Type of Sponsorships</label>
+            <select id="type" name="type">
+              <option value="">Select</option>
+              <option value="hole">Hole Sponsor</option>
+              <option value="tee">Tee Box</option>
+              <option value="banner">Banner</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="additional">Additional Sponsorships</label>
+            <input id="additional" name="additional" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <div id="contactMsg" class="small" style="margin-left:auto"></div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="sidebar card">
+        <h3>Contact</h3>
+        <p class="small">Email <a href="mailto:#">Email</a></p>
+        <img src="img/contact.webp" alt="phone" style="width:100%;border-radius:8px;margin-top:.5rem" />
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="small">© 2026 Green Valley Community Golf Day</div>
+      <div class="small">Facebook • <a href="mailto:#">Email</a></div>
+    </footer>
+  </div>
+
+  <script src="global/app.js"></script>
+</body>
+</html>

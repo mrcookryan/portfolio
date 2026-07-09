@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painting Company — Contact</title>
+  <link rel="stylesheet" href="global/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="global/img/logo.webp" width="200">
+        <span class="tagline">Professional painting services inside and out</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggleContact" aria-expanded="false" aria-controls="mainNavContact">☰</button>
+
+      <nav id="mainNavContact" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container contact-inner">
+        <div class="contact-form-wrap">
+          <h1>Request a Free Estimate</h1>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">First & Last Name <span class="required">*</span></label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Phone <span class="required">*</span></label>
+            <input id="phone" name="phone" type="tel" required />
+
+            <label for="address">Address (Street, City, State & Zip)</label>
+            <input id="address" name="address" type="text" />
+
+            <label for="message">Description of Service <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h2>Contact</h2>
+	  <img src="global/img/contact.webp" width="190">
+          <p><strong>Phone:</strong> (555) 555-5555</p>
+          <p><strong>Email:</strong> info@paintingcompany.example</p>
+          <p>We respond to estimate requests within 48 hours.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="yearContact"></span> Painting Company. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('navToggleContact');
+      const nav = document.getElementById('mainNavContact');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+      document.getElementById('yearContact').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

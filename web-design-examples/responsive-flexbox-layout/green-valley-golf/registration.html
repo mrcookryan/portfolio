@@ -1,0 +1,98 @@
+<!-- registration.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="global/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+        <div class="logo">GVC</div>
+        <div>
+          <div class="title">Green Valley Community Golf Day</div>
+          <div class="subtitle">Registration</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">HOME</a>
+        <a href="registration.html" class="active">REGISTRATION</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="content card">
+        <h2>Registration Form</h2>
+        <p class="small">Please enter a valid email. Invoices for PayPal payment will be sent to the provided email.</p>
+
+        <form id="regForm" novalidate>
+          <div class="form-row">
+            <label for="name">First & Last Name *</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="address">Address (Street, City, State & Zip) *</label>
+            <input id="address" name="address" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone *</label>
+            <input id="phone" name="phone" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <fieldset style="border:0;padding:0;margin:0">
+            <legend style="font-weight:700;margin-bottom:.5rem">Players</legend>
+            <div class="form-row">
+              <label for="p1">Player 1</label>
+              <input id="p1" name="p1" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="p2">Player 2</label>
+              <input id="p2" name="p2" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="p3">Player 3</label>
+              <input id="p3" name="p3" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="p4">Player 4</label>
+              <input id="p4" name="p4" type="text" />
+            </div>
+          </fieldset>
+
+          <div class="form-actions" style="margin-top:.5rem">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-outline" type="reset">Reset</button>
+            <div id="regMsg" class="small" style="margin-left:auto"></div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="sidebar card">
+        <h3>Course Location</h3>
+        <p class="small">Green Valley Community Golf Club<br/>123 Green Valley Blvd.<br/>Green Valley, IN</p>
+        <p class="small">Phone #</p>
+	<img src="img/course.jpg" alt="phone" style="width:100%;border-radius:8px;margin-top:.5rem" />
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="small">© 2026 Green Valley Community Golf Day</div>
+      <div class="small"><a href="mailto:#">Email</a></div>
+    </footer>
+  </div>
+
+  <script src="global/app.js"></script>
+</body>
+</html>
