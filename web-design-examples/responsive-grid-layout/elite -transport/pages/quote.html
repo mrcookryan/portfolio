@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a free, no-obligation transportation quote. Fill in your trip details and we'll get back to you within 2 hours." />
+  <meta name="keywords" content="transportation quote, book limousine, hire SUV, party bus booking, chauffeured service" />
+  <meta property="og:title" content="Get a Free Quote — Elite Transportation Services" />
+  <meta property="og:description" content="Fill in your trip details and receive a personalized quote within 2 hours." />
+  <meta name="theme-color" content="#0b2545" />
+  <title>Get a Free Quote — Elite Transportation Services</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="icon" href="../images/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══ HEADER ════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="../index.html" class="nav-logo" aria-label="Elite Transportation — Home">
+          <img src="../images/logo.svg" alt="" width="40" height="40" aria-hidden="true" />
+          <span class="nav-logo__text">Elite <span>Transport</span></span>
+        </a>
+        <button class="nav-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="main-menu" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="vehicles.html">Vehicles</a></li>
+          <li><a href="quote.html" class="active">Get a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="quote.html" class="btn btn--primary btn--sm nav-cta" aria-current="page">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══ MAIN ══════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li aria-current="page">Get a Quote</li>
+        </ol>
+        <h1 id="page-title">Request a Free Quote</h1>
+        <p>Tell us about your trip and we'll send you a personalized, no-obligation quote within 2 hours.</p>
+      </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="section" aria-labelledby="quote-form-heading">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 320px; gap: 3rem; align-items: start;">
+
+          <!-- ── Form Column ──────────────────────────────────── -->
+          <div>
+            <!-- Success Message (hidden until submit) -->
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite" aria-atomic="true">
+              <div class="form-success__icon" aria-hidden="true">✅</div>
+              <h2>Quote Request Sent!</h2>
+              <p>Thank you! We've received your request and will reach out with a personalized quote within 2 hours. Check your inbox for a confirmation.</p>
+              <a href="../index.html" class="btn btn--primary mt-md">Return to Home</a>
+            </div>
+
+            <div class="quote-form-wrapper fade-up">
+              <h2 id="quote-form-heading" style="margin-bottom:1.75rem; font-size:1.5rem;">Trip Details</h2>
+
+              <form id="quoteForm" novalidate aria-label="Transportation quote request form">
+
+                <!-- ─ Contact Information ────────────────────── -->
+                <fieldset style="border:none; padding:0; margin:0 0 2rem;">
+                  <legend class="form-section-title">Contact Information</legend>
+                  <div class="form-grid">
+
+                    <div class="form-group--row">
+                      <div class="form-group">
+                        <label for="firstName">First Name <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required
+                               autocomplete="given-name"
+                               placeholder="Jane"
+                               aria-required="true"
+                               aria-describedby="firstName-error" />
+                        <span class="field-error" id="firstName-error" role="alert" data-required="Please enter your first name."></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="lastName">Last Name <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required
+                               autocomplete="family-name"
+                               placeholder="Smith"
+                               aria-required="true"
+                               aria-describedby="lastName-error" />
+                        <span class="field-error" id="lastName-error" role="alert" data-required="Please enter your last name."></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group--row">
+                      <div class="form-group">
+                        <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required
+                               autocomplete="email"
+                               placeholder="jane@example.com"
+                               aria-required="true"
+                               aria-describedby="email-error" />
+                        <span class="field-error" id="email-error" role="alert" data-required="Please enter your email address."></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone Number <span class="required" aria-hidden="true">*</span></label>
+                        <input type="tel" id="phone" name="phone" required
+                               autocomplete="tel"
+                               placeholder="(555) 000-0000"
+                               aria-required="true"
+                               aria-describedby="phone-error" />
+                        <span class="field-error" id="phone-error" role="alert" data-required="Please enter a valid phone number."></span>
+                      </div>
+                    </div>
+
+                  </div>
+                </fieldset>
+
+                <!-- ─ Vehicle & Service ──────────────────────── -->
+                <fieldset style="border:none; padding:0; margin:0 0 2rem;">
+                  <legend class="form-section-title">Vehicle &amp; Service Type</legend>
+                  <div class="form-grid">
+
+                    <div class="form-group--row">
+                      <div class="form-group">
+                        <label for="vehicle">Select Vehicle <span class="required" aria-hidden="true">*</span></label>
+                        <select id="vehicle" name="vehicle" required
+                                aria-required="true"
+                                aria-describedby="vehicle-error">
+                          <option value="" disabled selected>— Choose a vehicle —</option>
+                          <option value="limo">Stretch Limousine (up to 10)</option>
+                          <option value="suv">Luxury SUV (up to 6)</option>
+                          <option value="partybus">Party Bus (up to 30)</option>
+                        </select>
+                        <span class="field-error" id="vehicle-error" role="alert" data-required="Please select a vehicle."></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="serviceType">Service Type <span class="required" aria-hidden="true">*</span></label>
+                        <select id="serviceType" name="serviceType" required
+                                aria-required="true"
+                                aria-describedby="serviceType-error">
+                          <option value="" disabled selected>— Select service —</option>
+                          <option value="airport">Airport Transfer</option>
+                          <option value="corporate">Corporate Travel</option>
+                          <option value="wedding">Wedding / Special Event</option>
+                          <option value="prom">Prom / Homecoming</option>
+                          <option value="nightout">Night Out / Party</option>
+                          <option value="charter">Group Charter</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <span class="field-error" id="serviceType-error" role="alert" data-required="Please select a service type."></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="passengers">Number of Passengers <span class="required" aria-hidden="true">*</span></label>
+                      <select id="passengers" name="passengers" required
+                              aria-required="true"
+                              aria-describedby="passengers-error">
+                        <option value="" disabled selected>— Select passenger count —</option>
+                        <option value="1">1 passenger</option>
+                        <option value="2-4">2–4 passengers</option>
+                        <option value="5-6">5–6 passengers</option>
+                        <option value="7-10">7–10 passengers</option>
+                        <option value="11-20">11–20 passengers</option>
+                        <option value="21-30">21–30 passengers</option>
+                      </select>
+                      <span class="field-error" id="passengers-error" role="alert" data-required="Please select passenger count."></span>
+                    </div>
+
+                  </div>
+                </fieldset>
+
+                <!-- ─ Trip Details ───────────────────────────── -->
+                <fieldset style="border:none; padding:0; margin:0 0 2rem;">
+                  <legend class="form-section-title">Trip Details</legend>
+                  <div class="form-grid">
+
+                    <div class="form-group">
+                      <label for="pickupLocation">Pickup Location <span class="required" aria-hidden="true">*</span></label>
+                      <input type="text" id="pickupLocation" name="pickupLocation" required
+                             placeholder="123 Main St, Anytown, ST — or airport name"
+                             autocomplete="street-address"
+                             aria-required="true"
+                             aria-describedby="pickupLocation-error" />
+                      <span class="field-error" id="pickupLocation-error" role="alert" data-required="Please enter the pickup location."></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="dropoffLocation">Drop-off Location <span class="required" aria-hidden="true">*</span></label>
+                      <input type="text" id="dropoffLocation" name="dropoffLocation" required
+                             placeholder="456 Event Ave, Anytown, ST — or destination name"
+                             aria-required="true"
+                             aria-describedby="dropoffLocation-error" />
+                      <span class="field-error" id="dropoffLocation-error" role="alert" data-required="Please enter the drop-off location."></span>
+                    </div>
+
+                    <div class="form-group--row">
+                      <div class="form-group">
+                        <label for="pickupDate">Pickup Date <span class="required" aria-hidden="true">*</span></label>
+                        <input type="date" id="pickupDate" name="pickupDate" required
+                               aria-required="true"
+                               aria-describedby="pickupDate-error" />
+                        <span class="field-error" id="pickupDate-error" role="alert" data-required="Please select a pickup date."></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="pickupTime">Pickup Time <span class="required" aria-hidden="true">*</span></label>
+                        <input type="time" id="pickupTime" name="pickupTime" required
+                               aria-required="true"
+                               aria-describedby="pickupTime-error" />
+                        <span class="field-error" id="pickupTime-error" role="alert" data-required="Please select a pickup time."></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group--row">
+                      <div class="form-group">
+                        <label for="returnDate">Return / Drop-off Date</label>
+                        <input type="date" id="returnDate" name="returnDate"
+                               aria-describedby="returnDate-hint" />
+                        <span class="form-note" id="returnDate-hint">Leave blank for one-way trips</span>
+                      </div>
+                      <div class="form-group">
+                        <label for="returnTime">Return / Drop-off Time</label>
+                        <input type="time" id="returnTime" name="returnTime" />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="specialRequests">Special Requests or Notes</label>
+                      <textarea id="specialRequests" name="specialRequests"
+                                placeholder="Flight number for airport pickups, accessibility needs, decoration requests, preferred route, etc."
+                                aria-describedby="specialRequests-hint"></textarea>
+                      <span class="form-note" id="specialRequests-hint">The more detail, the better we can serve you.</span>
+                    </div>
+
+                  </div>
+                </fieldset>
+
+                <!-- ─ Consent & Submit ───────────────────────── -->
+                <div class="form-group" style="flex-direction:row; align-items:flex-start; gap:.75rem; background:var(--gray-light); padding:1rem; border-radius:var(--radius-sm);">
+                  <input type="checkbox" id="consent" name="consent" required
+                         style="width:auto; margin-top:.2rem; flex-shrink:0; accent-color:var(--teal);"
+                         aria-required="true"
+                         aria-describedby="consent-error" />
+                  <div>
+                    <label for="consent" style="font-weight:500; font-size:.92rem; color:var(--text);">
+                      I agree to be contacted by Elite Transportation Services regarding my quote request. No spam — ever.
+                      <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <span class="field-error" id="consent-error" role="alert" data-required="Please accept to continue."></span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-md mt-md flex-wrap" style="margin-top:1.5rem;">
+                  <button type="submit" class="btn btn--primary btn--lg">
+                    Send My Quote Request
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </button>
+                  <span class="form-note">We respond within 2 hours during business hours.</span>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- ── Sidebar ─────────────────────────────────────── -->
+          <aside aria-label="Quote information sidebar" style="position:sticky; top:100px;">
+            <div style="background:var(--navy); color:var(--white); border-radius:var(--radius-lg); padding:2rem; margin-bottom:1.5rem;">
+              <h3 style="color:var(--white); margin-bottom:1rem;">What Happens Next?</h3>
+              <ol style="padding-left:1.25rem; display:flex; flex-direction:column; gap:.75rem;">
+                <li style="color:rgba(255,255,255,.85); font-size:.92rem;">Submit your request with trip details</li>
+                <li style="color:rgba(255,255,255,.85); font-size:.92rem;">Our team reviews your needs and builds a custom quote</li>
+                <li style="color:rgba(255,255,255,.85); font-size:.92rem;">We reach out within 2 hours with pricing and availability</li>
+                <li style="color:rgba(255,255,255,.85); font-size:.92rem;">Confirm and secure your booking — done!</li>
+              </ol>
+            </div>
+
+            <div style="background:var(--teal-light); border-left:4px solid var(--teal); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem;">
+              <h4 style="color:var(--teal-dark); margin-bottom:.5rem;">💡 Pricing Tip</h4>
+              <p style="font-size:.88rem; color:var(--text); max-width:none;">Booking 72+ hours in advance often qualifies for our early booking discount. Let us know your budget in the notes!</p>
+            </div>
+
+            <div style="background:var(--white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--shadow);">
+              <h4 style="margin-bottom:1rem;">Prefer to call?</h4>
+              <a href="tel:+15550001234" style="display:flex; align-items:center; gap:.6rem; font-weight:700; font-size:1.1rem; color:var(--navy); text-decoration:none; margin-bottom:.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l.93-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>
+                (555) 000-1234
+              </a>
+              <p style="font-size:.85rem; color:var(--gray-dark); max-width:none;">Available 24/7. Our dispatch team is always happy to help.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">
+            <img src="../images/logo.svg" alt="" width="36" height="36" aria-hidden="true" />
+            <span class="nav-logo__text">Elite <span>Transport</span></span>
+          </a>
+          <p>Premium chauffeured transportation serving the tri-state area. Available 24/7 for every occasion.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="quote.html">Airport Transfers</a></li>
+            <li><a href="quote.html">Corporate Travel</a></li>
+            <li><a href="quote.html">Wedding Transportation</a></li>
+            <li><a href="quote.html">Group Charters</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="vehicles.html">Our Fleet</a></li>
+            <li><a href="quote.html">Get a Quote</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+15550001234">(555) 000-1234</a></li>
+            <li><a href="mailto:info@elitetransport.example">info@elitetransport.example</a></li>
+            <li>123 Placeholder Blvd, Anytown ST 00000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Elite Transportation Services. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script>
+    // Pre-select vehicle from URL param (e.g. quote.html?vehicle=suv)
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const v = params.get('vehicle');
+      if (v) {
+        const sel = document.getElementById('vehicle');
+        if (sel) sel.value = v;
+      }
+      // Set min date to today
+      const today = new Date().toISOString().split('T')[0];
+      ['pickupDate','returnDate'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.min = today;
+      });
+    })();
+  </script>
+</body>
+</html>
