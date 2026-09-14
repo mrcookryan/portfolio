@@ -1,0 +1,22 @@
+A, AAAA
+
+
+
+CNAME
+
+
+
+MX
+
+
+
+TXT (SPF, DKIM, DMARC)
+
+
+
+NS
+
+
+
+SOA
+

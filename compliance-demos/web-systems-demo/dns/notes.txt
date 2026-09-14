@@ -1,0 +1,76 @@
+# DNS Notes — Web Systems Demo
+
+These notes provide additional context for how DNS behaves in real environments and how it supports the rest of the Web Systems Demo.
+
+
+# TTL (Time To Live)
+TTL controls how long DNS records are cached by resolvers.
+Lower TTL = faster propagation.
+Higher TTL = more stability and fewer DNS lookups.
+
+Common values:
+- 300  (5 minutes)
+- 1800 (30 minutes)
+- 3600 (1 hour)
+- 86400 (1 day)
+
+
+# Propagation
+DNS changes do not update instantly.
+Resolvers must expire cached records before fetching new ones.
+Propagation time depends on:
+- TTL value
+- ISP caching behavior
+- Global resolver distribution
+
+
+# MX Priority
+Lower number = higher priority.
+Example:
+10 mail.example.com
+20 backup.example.com
+
+Mail servers try the lowest number first, then fall back if unavailable.
+
+
+# SPF / DKIM / DMARC
+These records help prevent spoofing and improve email deliverability.
+
+SPF: Defines which servers may send mail for the domain.
+DKIM: Cryptographically signs outgoing mail.
+DMARC: Enforces alignment between SPF/DKIM and the From: domain.
+
+See `spfdkimdmarc.txt` for examples.
+
+
+# A vs CNAME
+A record → maps a hostname to an IP address.
+CNAME → maps a hostname to another hostname.
+
+Root domain (example.com) cannot be a CNAME.
+
+
+# NS Records
+NS records define the authoritative nameservers for the domain.
+These servers hold the zone file and respond to DNS queries.
+
+
+# SOA Record
+The SOA block contains:
+- Primary nameserver
+- Contact email (admin@example.com)
+- Serial number (increment when updating zone)
+- Refresh / retry / expire timers
+- Minimum TTL
+
+See `example-zone-file.txt` for a complete SOA example.
+
+
+# Relationship to Hosting / Routing / Apache
+DNS is the entry point for all other systems:
+
+- Hosting: DNS points the domain to the server.
+- Apache: Virtual hosts respond to the domain resolved by DNS.
+- Routing: API paths and endpoints rely on DNS to reach the correct machine.
+
+DNS is the foundation of the entire Web Systems Demo.

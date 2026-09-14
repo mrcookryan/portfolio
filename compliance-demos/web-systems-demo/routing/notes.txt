@@ -1,0 +1,92 @@
+# Routing Notes — Web Systems Demo
+
+These notes provide additional context for how routing behaves in real environments and how it supports the rest of the Web Systems Demo.
+
+
+# Canonical Routing
+Canonical routing ensures that all variations of a URL resolve to a single, preferred version.
+
+Common canonical rules:
+- Force HTTPS
+- Force non-www or www (one canonical choice)
+- Remove trailing slashes
+- Normalize index files (index.html → /)
+- Prevent duplicate paths
+
+Canonical routing improves SEO, consistency, and user experience.
+
+
+# API Routing
+API routes typically follow a structured pattern:
+- /api/v1/resource
+- /api/v1/resource/:id
+- /api/v2/… (versioning)
+
+API routing often includes:
+- JSON responses
+- CORS headers
+- Method-based routing (GET, POST, PUT, DELETE)
+
+Server-level routing ensures API endpoints resolve correctly before application logic takes over.
+
+
+# Static Asset Routing
+Static assets should be served efficiently and predictably.
+
+Common static asset paths:
+- /assets/css/
+- /assets/js/
+- /assets/img/
+- /assets/fonts/
+
+Best practices:
+- Enable caching (Expires/Cache-Control)
+- Use clean, predictable folder structure
+- Avoid routing static assets through application logic
+
+
+# Fallback Routing
+Fallback routing handles requests that do not match any defined route.
+
+Examples:
+- 404 pages
+- SPA (Single Page Application) fallback to index.html
+- API fallback responses
+- Maintenance mode pages
+
+Fallback routing ensures users receive meaningful responses even when paths are invalid.
+
+
+# Order of Operations
+Routing follows a predictable sequence:
+1. Canonical redirects
+2. Static asset checks
+3. API routing
+4. Application-level routing
+5. Fallback routing
+
+This order prevents conflicts and ensures efficient request handling.
+
+
+# Server vs Application Routing
+Server routing:
+- Handled by Apache/Nginx
+- Uses rewrite rules
+- Controls canonical behavior, redirects, and static assets
+
+Application routing:
+- Handled by frameworks (Laravel, Express, Django, etc.)
+- Controls business logic and dynamic endpoints
+
+Both layers must work together for a stable system.
+
+
+# Relationship to DNS / Hosting / Apache
+Routing is the final step in the request flow:
+
+- DNS → resolves the domain to the server
+- Hosting → provides the environment and file structure
+- Apache → serves the site and enables rewrite rules
+- Routing → directs requests to the correct resources or endpoints
+
+Routing completes the Web Systems Demo by showing how requests flow through the entire stack.
