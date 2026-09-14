@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Cook | UI Developer</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+<style>
+/* Footer */
+.nx-footer {
+  padding: clamp(3rem, 7vw, 5rem) 0 0;
+  background: var(--ink);
+  border-top: 1px solid var(--line);
+}
+
+.nx-footer__grid {
+  display: grid;
+  gap: 3rem;
+  align-content: space-evenly;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .nx-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.nx-footer__col {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.nx-footer__list li,
+.nx-footer__skills li {
+  margin-bottom: 1.2rem;
+}
+
+.nx-footer__list p {
+  margin-top: 0.35rem;
+  color: var(--mute);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.nx-footer__skills {
+  display: grid;
+  gap: 0.6rem;
+  color: var(--mist);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nx-footer__base {
+  margin-top: 3rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--line);
+  background: var(--void);
+}
+
+.nx-footer__base p {
+  color: var(--mute);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+  <main id="content">
+    <header class="nx-pagehero">
+      <div class="nx-wrap">
+        <p class="nx-kicker">UI Developer</p>
+        <h1 class="nx-display">Ryan Cook</h1>
+        <p class="nx-lede">This portfolio showcases UI‑focused front‑end development, accessible design, 508 remediation, and web systems fundamentals. Each project is crafted with semantic HTML, modern CSS, progressive JavaScript, mobile‑first layout patterns, and WCAG‑aligned accessibility techniques.</p>
+        <div class="nx-filters" role="group" aria-label="Filter projects">
+          <button type="button" class="is-on" data-filter="all">All</button>
+          <button type="button" data-filter="shop">shop</button>
+          <button type="button" data-filter="band">band</button>
+          <button type="button" data-filter="spa">spa</button>
+          <button type="button" data-filter="contractor">contractor</button>
+          <button type="button" data-filter="office">office</button>
+          <button type="button" data-filter="restaurant">restaurant</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="nx-folio" aria-label="Project grid">
+      <div class="nx-wrap nx-folio__grid">
+        <button class="nx-card nx-card--wide" type="button" data-open="chamber-juniper" data-kind="shop">
+          <img src="assets/img/juniper.webp" alt="Juniper Lane">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Shop</span>
+            <span class="nx-card__title">Juniper Lane</span>
+          </span>
+        </button>
+        <button class="nx-card nx-card--mid" type="button" data-open="chamber-vesperfall" data-kind="band">
+          <img src="assets/img/vesperfall.webp" alt="Vesperfall">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Band</span>
+            <span class="nx-card__title">Vesperfall</span>
+          </span>
+        </button>
+        <button class="nx-card nx-card--split" type="button" data-open="chamber-solace" data-kind="spa">
+          <img src="assets/img/solace.webp" alt="Solace Spa Studio">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Spa</span>
+            <span class="nx-card__title">Solace Spa Studio</span>
+          </span>
+        </button>
+        <button class="nx-card nx-card--split" type="button" data-open="chamber-summit" data-kind="contractor">
+          <img src="assets/img/summit.webp" alt="Summit Home Services">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Contractor</span>
+            <span class="nx-card__title">Summit Home Services</span>
+          </span>
+        </button>
+        <button class="nx-card nx-card--mid" type="button" data-open="chamber-meridian" data-kind="office">
+          <img src="assets/img/meridian.webp" alt="Meridian Professional Group">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Office</span>
+            <span class="nx-card__title">Meridian Professional Group</span>
+          </span>
+        </button>
+        <button class="nx-card nx-card--wide" type="button" data-open="chamber-solara" data-kind="restaurant">
+          <img src="assets/img/solara.webp" alt="Solara">
+          <span class="nx-card__veil">
+            <span class="nx-card__kind">Restaurant</span>
+            <span class="nx-card__title">Solara</span>
+          </span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="nx-chamber" id="chamber-juniper" aria-labelledby="juniper-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/juniper-close.webp" alt="Juniper Lane">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Shop</p>
+        <h2 id="juniper-title">Juniper Lane</h2>
+        <p>The build uses a clean, database‑free architecture engineered for speed, stability, and long‑term maintainability. Pages load in under a second, product galleries feel instant, and the entire experience stays smooth even during high‑traffic seasonal drops.</p>
+      </div>
+<ul class="nx-metrics">
+  <li><strong>+174%</strong><span>High‑margin item sales</span></li>
+  <li><strong>+229%</strong><span>Add‑to‑bag rate</span></li>
+  <li><strong>+52%</strong><span>Returning visitors</span></li>
+</ul>
+<a class="nx-textlink" href="demos/juniper-lane-boutique/" target="_blank">
+<span>View Full Demo</span>
+<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+</a>
+</div>
+  </dialog>
+
+  <dialog class="nx-chamber" id="chamber-vesperfall" aria-labelledby="vesperfall-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/vesperfall-close.webp" alt="Vesperfall">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Band</p>
+        <h2 id="vesperfall-title">Vesperfall</h2>
+        <p>The build uses a lean, media‑optimized, database‑free architecture engineered to deliver heavy visual impact without sacrificing speed or stability. High‑resolution artwork, atmospheric gradients, and motion effects load instantly, keeping pages under a one‑second render time even during release‑day traffic spikes. The result is a fast, resilient, cinematic experience that matches the band’s aesthetic while remaining effortless to maintain long‑term.</p>
+      </div>
+      <ul class="nx-metrics">
+        <li><strong>+84%</strong><span>Show bookings</span></li>
+        <li><strong>+47%</strong><span>Merch sales</span></li>
+        <li><strong>+68%</strong><span>Follower increase</span></li>
+      </ul>
+      <a class="nx-textlink" href="demos/vesperfall/" target="_blank">
+       <span>View Full Demo</span>
+       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+       </a>
+    </div>
+  </dialog>
+
+  <dialog class="nx-chamber" id="chamber-solace" aria-labelledby="solace-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/solace-close.webp" alt="Solace Spa Studio">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Spa</p>
+        <h2 id="solace-title">Solace Spa Studio</h2>
+        <p>The build uses a lightweight, wellness‑optimized, database‑free architecture engineered for calm, instant performance. Soft gradients, organic textures, and high‑resolution treatment imagery load effortlessly, keeping every page under a one‑second render time. Scroll‑linked motion and ambient transitions stay smooth even during peak booking periods, creating a tranquil, premium digital experience that mirrors the studio’s in‑person atmosphere while remaining simple to maintain long‑term.</p>
+      </div>
+ <ul class="nx-metrics">
+  <li><strong>+121%</strong><span>Session bookings</span></li>
+  <li><strong>+184%</strong><span>Treatment inquiries</span></li>
+  <li><strong>+89%</strong><span>Local discovery</span></li>
+</ul>
+      <a class="nx-textlink" href="demos/solace-spa-studio/" target="_blank">
+       <span>View Full Demo</span>
+       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+       </a>
+    </div>
+  </dialog>
+
+  <dialog class="nx-chamber" id="chamber-summit" aria-labelledby="summit-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/summit-close.webp" alt="Harbor &amp; Co hospitality still">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Contractor</p>
+        <h2 id="summit-title">Summit Home Services</h2>
+        <p>The build uses a clean, contractor‑grade, database‑free architecture engineered for speed, durability, and long‑term stability. Service pages load instantly, project galleries feel immediate, and the entire experience stays smooth even during peak seasonal traffic. The structure is intentionally lightweight, making updates effortless while delivering a polished, trustworthy digital presence that reflects Summit’s workmanship and keeps homeowners moving confidently toward booking.</p>
+      </div>
+<ul class="nx-metrics">
+  <li><strong>+184%</strong><span>Service inquiries</span></li>
+  <li><strong>3.1×</strong><span>Quote requests</span></li>
+  <li><strong>+72%</strong><span>Local visibility</span></li>
+</ul>      
+<a class="nx-textlink" href="demos/summit-home-services/" target="_blank">
+<span>View Full Demo</span>
+<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+</a>
+    </div>
+  </dialog>
+
+  <dialog class="nx-chamber" id="chamber-meridian" aria-labelledby="meridian-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/meridian-close.webp" alt="Meridian Professional Group">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Office</p>
+        <h2 id="meridian-title">Meridian Professional Group</h2>
+        <p>The build uses a polished, enterprise‑grade, database‑free architecture engineered for clarity, stability, and long‑term maintainability. Corporate grids, executive profiles, and multi‑tier service matrices load instantly, keeping every page under a one‑second render time. The structured layout, refined typography, and disciplined spacing create a modern, trust‑forward digital presence that feels authoritative while remaining lightweight, efficient, and effortless to update as the firm grows.</p>
+      </div>
+      <ul class="nx-metrics">
+        <li><strong>+138%</strong><span>Client inquiries</span></li>
+        <li><strong>+117%</strong><span>Consultation requests</span></li>
+        <li><strong>3.4×</strong><span>Service engagement</span></li>
+      </ul>
+      <a class="nx-textlink" href="demos/meridian-professional-group/" target="_blank">
+       <span>View Full Demo</span>
+       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+       </a>
+    </div>
+  </dialog>
+
+  <dialog class="nx-chamber" id="chamber-solara" aria-labelledby="solara-title">
+    <button class="nx-chamber__close" type="button" data-close aria-label="Close case study">×</button>
+    <img src="assets/img/solara-close.webp" alt="Solara">
+    <div class="nx-chamber__body">
+      <div>
+        <p class="nx-kicker">Restaurant</p>
+        <h2 id="pulse-title">Solara</h2>
+        <p>The build uses a cinematic, ember‑lit, database‑free architecture engineered for warmth, speed, and long‑term stability. Atmospheric hero imagery, moody interior shots, and high‑end dish photography load instantly, keeping every page under a one‑second render time even during peak reservation surges. The layout’s refined spacing, premium typography, and soft‑glow transitions create an elevated, immersive dining experience online—mirroring Solara’s intimate, fine‑dining ambiance while remaining effortless to maintain as the restaurant evolves.</p>
+      </div>
+<ul class="nx-metrics">
+  <li><strong>+247%</strong><span>Reservation lift</span></li>
+  <li><strong>3.8×</strong><span>Menu engagement</span></li>
+  <li><strong>+312%</strong><span>Online orders</span></li>
+</ul>
+      <a class="nx-textlink" href="demos/solara/" target="_blank">
+       <span>View Full Demo</span>
+       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.4" stroke-linecap="square"/></svg>
+       </a>
+    </div>
+  </dialog>
+
+<footer class="nx-footer">
+  <div class="nx-wrap nx-footer__grid">
+
+    <!-- Portfolio Links -->
+    <div class="nx-footer__col">
+      <p class="nx-kicker">Compliance</p>
+      <ul class="nx-footer__list">
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/508-compliance-example/" target="_blank">
+            <span>508 Compliance Example</span>
+          </a>
+          <p>Alt text, keyboard navigation, color contrast, semantic structure, validation.</p>
+        </li>
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/accessible-web-module/" target="_blank">
+            <span>Accessible Web Module</span>
+          </a>
+          <p>Semantic layout, responsive design, WCAG patterns.</p>
+        </li>
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/digital-learning-landing-page/" target="_blank">
+            <span>Digital Learning Landing Page</span>
+          </a>
+          <p>LMS‑style structure, accessible components.</p>
+        </li>
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/qa-audit-remediation-demo/" target="_blank">
+            <span>QA Audit & Remediation Demo</span>
+          </a>
+          <p>Issues, remediation workflow, verification of fixes.</p>
+        </li>
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/trainer-image-demo/" target="_blank">
+            <span>Trainer Image Demo</span>
+          </a>
+          <p>Accessible media, figure/figcaption, object‑fit containment.</p>
+        </li>
+
+        <li>
+          <a class="nx-textlink" href="compliance-demos/web-systems-demo/" target="_blank">
+            <span>Web Systems Demo</span>
+          </a>
+          <p>DNS logic, Apache config, rewrite rules, security headers, routing, hosting fundamentals.</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="nx-footer__col">
+      <p class="nx-kicker">Skills Demonstrated</p>
+      <ul class="nx-footer__skills">
+        <li>Semantic HTML</li>
+        <li>Modern CSS architecture</li>
+        <li>WCAG 2.1 AA / Section 508 compliance</li>
+        <li>Keyboard accessibility</li>
+        <li>Color contrast validation</li>
+        <li>QA auditing + remediation</li>
+        <li>Web Systems fundamentals (DNS, hosting, Apache)</li>
+        <li>Performance + accessibility testing (Lighthouse, WAVE, Axe)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="nx-footer__base">
+    <div class="nx-wrap">
+      <p>© <script>var year = new Date();document.write(year.getFullYear());</script> Ryan Cook | UI Developer</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
