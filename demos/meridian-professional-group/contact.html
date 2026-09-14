@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Meridian Professional Group to schedule a consultation. Reach our Dallas headquarters or submit a corporate inquiry online.">
+  <title>Contact Us | Meridian Professional Group</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Meridian Professional Group — Home">
+        <span class="site-logo__name">Meridian Professional Group</span>
+        <span class="site-logo__tagline">Advisory &amp; Professional Services</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle__button" aria-label="Toggle navigation menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="about.html" class="site-nav__link">About</a></li>
+          <li><a href="services.html" class="site-nav__link">Services</a></li>
+          <li><a href="contact.html" class="site-nav__link site-nav__link--active" aria-current="page">Contact</a></li>
+        </ul>
+
+        <div class="site-nav__mega">
+          <p class="site-nav__mega-title">Quick Access</p>
+          <div class="site-nav__mega-grid">
+            <a href="services.html" class="site-nav__mega-link">Advisory Services</a>
+            <a href="services.html#operational" class="site-nav__mega-link">Operational Excellence</a>
+            <a href="about.html" class="site-nav__mega-link">Leadership Team</a>
+            <a href="contact.html" class="site-nav__mega-link">Request Consultation</a>
+          </div>
+        </div>
+
+        <div class="site-nav__cta">
+          <a href="contact.html" class="btn btn--primary">Schedule Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">Contact</span>
+        <h1>Start a confidential conversation</h1>
+        <p class="lead">Complete the inquiry form below and a Meridian partner will respond within one business day. All submissions are handled with strict confidentiality.</p>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div>
+            <h2 id="contact-form-heading" class="visually-hidden">Corporate Inquiry Form</h2>
+
+            <form class="contact-form" data-contact-form action="#" method="post" novalidate>
+              <p class="form-section-title">Contact Information</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Business Email <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+              </div>
+
+              <p class="form-section-title">Organization Details</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company">Company / Organization <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="company" name="company" required autocomplete="organization">
+                </div>
+                <div class="form-group">
+                  <label for="title">Job Title <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="title" name="title" required autocomplete="organization-title">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="industry">Industry</label>
+                  <select id="industry" name="industry">
+                    <option value="">Select an industry</option>
+                    <option value="financial-services">Financial Services</option>
+                    <option value="healthcare">Healthcare &amp; Life Sciences</option>
+                    <option value="manufacturing">Manufacturing &amp; Industrial</option>
+                    <option value="technology">Technology &amp; Professional Services</option>
+                    <option value="public-sector">Public &amp; Institutional</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="company-size">Organization Size</label>
+                  <select id="company-size" name="company-size">
+                    <option value="">Select size range</option>
+                    <option value="1-50">1 – 50 employees</option>
+                    <option value="51-250">51 – 250 employees</option>
+                    <option value="251-1000">251 – 1,000 employees</option>
+                    <option value="1001-5000">1,001 – 5,000 employees</option>
+                    <option value="5000+">5,000+ employees</option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="form-section-title">Inquiry Details</p>
+
+              <div class="form-group">
+                <label for="service-interest">Area of Interest</label>
+                <select id="service-interest" name="service-interest">
+                  <option value="">Select a service area</option>
+                  <option value="strategic-advisory">Strategic Advisory</option>
+                  <option value="operational-excellence">Operational Excellence</option>
+                  <option value="governance-compliance">Governance &amp; Compliance</option>
+                  <option value="transformation">Transformation &amp; Integration</option>
+                  <option value="interim-leadership">Interim Leadership</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">How can we help? <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required placeholder="Briefly describe your organization's current challenge or objective..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="referral">How did you hear about Meridian?</label>
+                <select id="referral" name="referral">
+                  <option value="">Select an option</option>
+                  <option value="referral">Referral from a colleague</option>
+                  <option value="search">Web search</option>
+                  <option value="event">Industry event or conference</option>
+                  <option value="publication">Publication or article</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">Submit Inquiry</button>
+                <p class="form-note" data-form-status aria-live="polite"></p>
+                <p class="form-note">Fields marked with <span class="required">*</span> are required. Your information will never be shared with third parties.</p>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-sidebar" aria-label="Office location and hours">
+            <div class="office-card">
+              <h3>Dallas Headquarters</h3>
+              <img src="assets/img/office-dallas-headquarters.webp" alt="Meridian Professional Group Dallas office building exterior" class="office-card__image" width="400" height="225">
+              <div class="office-detail">
+                <span class="office-detail__icon" aria-hidden="true">&#9679;</span>
+                <span class="office-detail__text">1200 Commerce Street, Suite 2400<br>Dallas, TX 75201</span>
+              </div>
+              <div class="office-detail">
+                <span class="office-detail__icon" aria-hidden="true">&#9679;</span>
+                <span class="office-detail__text"><a href="tel:+12145550100">+1 (214) 555-0100</a></span>
+              </div>
+              <div class="office-detail">
+                <span class="office-detail__icon" aria-hidden="true">&#9679;</span>
+                <span class="office-detail__text"><a href="mailto:info@meridianprogroup.com">info@meridianprogroup.com</a></span>
+              </div>
+            </div>
+
+            <div class="contact-hours">
+              <h3>Office Hours</h3>
+              <dl>
+                <dt>Monday – Thursday</dt>
+                <dd>8:00 AM – 6:00 PM CST</dd>
+                <dt>Friday</dt>
+                <dd>8:00 AM – 5:00 PM CST</dd>
+                <dt>Saturday – Sunday</dt>
+                <dd>Closed</dd>
+              </dl>
+            </div>
+
+            <div class="office-card">
+              <h3>Regional Offices</h3>
+              <div class="office-detail">
+                <span class="office-detail__icon" aria-hidden="true">&#9679;</span>
+                <span class="office-detail__text"><strong>Chicago</strong><br>233 S Wacker Drive, Suite 8400<br>Chicago, IL 60606</span>
+              </div>
+              <div class="office-detail">
+                <span class="office-detail__icon" aria-hidden="true">&#9679;</span>
+                <span class="office-detail__text"><strong>New York</strong><br>1271 Avenue of the Americas, 42nd Floor<br>New York, NY 10020</span>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a href="index.html" class="site-logo">
+            <span class="site-logo__name">Meridian Professional Group</span>
+            <span class="site-logo__tagline">Advisory &amp; Professional Services</span>
+          </a>
+          <p class="site-footer__desc">Trusted advisory partner for executive teams and boards seeking clarity, structure, and measurable results.</p>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Company</h3>
+          <ul class="site-footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Leadership</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Services</h3>
+          <ul class="site-footer__links">
+            <li><a href="services.html">Strategic Advisory</a></li>
+            <li><a href="services.html#operational">Operational Excellence</a></li>
+            <li><a href="services.html">Governance &amp; Compliance</a></li>
+            <li><a href="services.html">Transformation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Contact</h3>
+          <ul class="site-footer__links">
+            <li><a href="tel:+12145550100">+1 (214) 555-0100</a></li>
+            <li><a href="mailto:info@meridianprogroup.com">info@meridianprogroup.com</a></li>
+            <li>1200 Commerce Street, Suite 2400<br>Dallas, TX 75201</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Meridian Professional Group. All rights reserved.</p>
+<div class="site-footer__legal"><a href="https://www.netavation.com" style="font-size: 10pt; text-decoration: none; padding: 20px;"><strong>WebCare&trade;</strong> by Netavation</a></div>
+        <div class="site-footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

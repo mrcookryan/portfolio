@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve a table at Solara in Santa Barbara. Hours, location, and a private reservation request for the 40-seat dining room.">
+  <title>Reserve — Solara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="duskbar duskbar--solid">
+    <div class="duskbar__inner">
+      <a class="solmark" href="index.html" aria-label="Solara home">
+        <span class="solmark__sun" aria-hidden="true"></span>
+        <span class="solmark__name">Solara</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label class="nav-switch" for="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="coursenav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="booking-open">
+      <p class="eyebrow">Reservations</p>
+      <h1>Hold a table in the last light.</h1>
+      <p>Solara seats forty guests each evening. We confirm requests within one business day. For parties of seven or more, or a private room, write us a note in the form.</p>
+    </header>
+
+    <section class="booking" aria-labelledby="form-heading">
+      <div class="booking__ledger">
+        <figure class="booking__facade">
+          <img src="assets/img/contact-facade.webp" alt="Solara’s evening facade: plaster walls, a walnut door, and amber windows on Coastline Drive" width="960" height="720">
+        </figure>
+
+        <div>
+          <h2>The house</h2>
+          <address>
+            Solara<br>
+            418 Coastline Drive<br>
+            Santa Barbara, California 93101
+          </address>
+          <p>
+            <a href="tel:+18055550148">(805) 555-0148</a><br>
+            <a href="mailto:reservations@solara-dining.com">reservations@solara-dining.com</a>
+          </p>
+        </div>
+
+        <div>
+          <h2>Hours</h2>
+          <dl class="hours">
+            <div>
+              <dt>Wednesday – Thursday</dt>
+              <dd>5:30 p.m. – 9:30 p.m.</dd>
+            </div>
+            <div>
+              <dt>Friday – Saturday</dt>
+              <dd>5:00 p.m. – 10:00 p.m.</dd>
+            </div>
+            <div>
+              <dt>Sunday</dt>
+              <dd>5:00 p.m. – 9:00 p.m.</dd>
+            </div>
+            <div>
+              <dt>Monday – Tuesday</dt>
+              <dd>Closed</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div>
+          <h2>Social</h2>
+          <ul class="social">
+            <li><a href="https://instagram.com" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://resy.com" rel="noopener noreferrer">Resy</a></li>
+            <li><a href="https://facebook.com" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="booking__form-wrap">
+        <h2 id="form-heading">Request a reservation</h2>
+        <p class="booking__lead">Tell us the evening you hope for. We will write back with a confirmation or a nearby table.</p>
+
+        <form class="reserve-form" id="reserve-form" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="guest-name">Full name</label>
+            <input id="guest-name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field-pair">
+            <div class="field">
+              <label for="guest-email">Email</label>
+              <input id="guest-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="guest-phone">Phone</label>
+              <input id="guest-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="field-pair">
+            <div class="field">
+              <label for="guest-date">Date</label>
+              <input id="guest-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="guest-time">Preferred time</label>
+              <select id="guest-time" name="time" required>
+                <option value="">Select a time</option>
+                <option value="17:00">5:00 p.m.</option>
+                <option value="17:30">5:30 p.m.</option>
+                <option value="18:00">6:00 p.m.</option>
+                <option value="18:30">6:30 p.m.</option>
+                <option value="19:00">7:00 p.m.</option>
+                <option value="19:30">7:30 p.m.</option>
+                <option value="20:00">8:00 p.m.</option>
+                <option value="20:30">8:30 p.m.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-pair">
+            <div class="field">
+              <label for="guest-party">Party size</label>
+              <select id="guest-party" name="party" required>
+                <option value="">Guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 or more</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="guest-occasion">Occasion <span class="optional">(optional)</span></label>
+              <input id="guest-occasion" name="occasion" type="text" placeholder="Anniversary, guests from abroad…">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guest-notes">Allergies or notes <span class="optional">(optional)</span></label>
+            <textarea id="guest-notes" name="notes" rows="4" placeholder="Dietary needs, a preferred table, or a private dining request."></textarea>
+          </div>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+          <button class="gilt-btn gilt-btn--block" type="submit">Send reservation request</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="atlas-map" aria-labelledby="map-heading">
+      <div class="atlas-map__copy">
+        <h2 id="map-heading">Find the loft</h2>
+        <p>We sit one flight above Coastline Drive, a short walk from the harbor. Street parking lines the block; a valet stand is offered Friday and Saturday from 5:00. Please arrive ten minutes early so we may seat you with a first glass.</p>
+      </div>
+      <figure class="atlas-map__frame">
+        <img src="assets/img/contact-map-placeholder.webp" alt="Map placeholder showing Solara on Coastline Drive near the Santa Barbara harbor" width="1600" height="720">
+        <figcaption>418 Coastline Drive, Santa Barbara</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon__grid">
+      <div class="colophon__brand">
+        <a class="solmark solmark--foot" href="index.html" aria-label="Solara home">
+          <span class="solmark__sun" aria-hidden="true"></span>
+          <span class="solmark__name">Solara</span>
+        </a>
+        <p>Fine dining on the Santa Barbara coast. Forty seats, one sitting, reservations required.</p>
+      </div>
+
+      <div>
+        <h2 class="colophon__head">Visit</h2>
+        <address>
+          418 Coastline Drive<br>
+          Santa Barbara, CA 93101
+        </address>
+        <p><a href="tel:+18055550148">(805) 555-0148</a></p>
+      </div>
+
+      <div>
+        <h2 class="colophon__head">Hours</h2>
+        <p>Wednesday – Sunday<br>Dinner from 5:30 in the evening</p>
+        <p>Closed Monday &amp; Tuesday</p>
+      </div>
+
+      <div>
+        <h2 class="colophon__head">The House</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" aria-current="page">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="colophon__base">
+      <p class="colophon__copy">© 2026 Solara. All rights reserved.</p>
+      <p class="colophon__care"><a href="https://www.netavation.com">WebCare™ by Netavation</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop curated women's fashion at Juniper Lane Boutique. Discover elevated essentials, seasonal collections, and timeless pieces.">
+  <title>Shop — Juniper Lane Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Juniper Lane Boutique home">Juniper <span>Lane</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+      </label>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="primary-nav__list">
+          <li><a href="index.html" class="primary-nav__link">Home</a></li>
+          <li><a href="shop.html" class="primary-nav__link" aria-current="page">Shop</a></li>
+          <li><a href="about.html" class="primary-nav__link">About</a></li>
+          <li><a href="contact.html" class="primary-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <span class="eyebrow">The Collection</span>
+        <h1>Shop All</h1>
+        <p>Every piece in our boutique is chosen for quality, versatility, and that effortless feeling of being perfectly put together.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="shop-heading">
+      <div class="container">
+        <h2 id="shop-heading" class="visually-hidden">Product listing</h2>
+
+        <div class="shop-toolbar">
+          <p class="shop-toolbar__count" aria-live="polite">12 pieces</p>
+          <div class="shop-filters" role="group" aria-label="Filter by category">
+            <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-tag" data-filter="dresses" aria-pressed="false">Dresses</button>
+            <button type="button" class="filter-tag" data-filter="tops" aria-pressed="false">Tops</button>
+            <button type="button" class="filter-tag" data-filter="bottoms" aria-pressed="false">Bottoms</button>
+            <button type="button" class="filter-tag" data-filter="outerwear" aria-pressed="false">Outerwear</button>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="dresses">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Willow Linen Dress, $168">
+              <div class="product-card__media">
+                <img src="assets/img/product-willow-dress-front.webp" alt="Willow Linen Dress in sage green" width="400" height="533">
+                <img src="assets/img/product-willow-dress-back.webp" alt="Willow Linen Dress back view" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Dresses</span>
+                <h3 class="product-card__title">Willow Linen Dress</h3>
+                <p class="product-card__price">$168</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="outerwear">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Meadow Blazer, $198">
+              <div class="product-card__media">
+                <img src="assets/img/product-meadow-blazer-front.webp" alt="Meadow Blazer in oatmeal" width="400" height="533">
+                <img src="assets/img/product-meadow-blazer-detail.webp" alt="Meadow Blazer lapel detail" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Outerwear</span>
+                <h3 class="product-card__title">Meadow Blazer</h3>
+                <p class="product-card__price">$198</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="tops">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Petal Silk Blouse, $118">
+              <div class="product-card__media">
+                <img src="assets/img/product-petal-blouse-front.webp" alt="Petal Silk Blouse in blush" width="400" height="533">
+                <img src="assets/img/product-petal-blouse-detail.webp" alt="Petal Silk Blouse tie neck detail" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Tops</span>
+                <h3 class="product-card__title">Petal Silk Blouse</h3>
+                <p class="product-card__price">$118</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="bottoms">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Horizon Trousers, $142">
+              <div class="product-card__media">
+                <img src="assets/img/product-horizon-trousers-front.webp" alt="Horizon Wide-Leg Trousers in taupe" width="400" height="533">
+                <img src="assets/img/product-horizon-trousers-styled.webp" alt="Horizon Trousers styled with heels" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Bottoms</span>
+                <h3 class="product-card__title">Horizon Trousers</h3>
+                <p class="product-card__price">$142</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="outerwear">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Cloud Knit Cardigan, $124">
+              <div class="product-card__media">
+                <img src="assets/img/product-cloud-cardigan-front.webp" alt="Cloud Knit Cardigan in cream" width="400" height="533">
+                <img src="assets/img/product-cloud-cardigan-detail.webp" alt="Cloud Knit Cardigan texture close-up" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Outerwear</span>
+                <h3 class="product-card__title">Cloud Knit Cardigan</h3>
+                <p class="product-card__price">$124</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="bottoms">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Glow Satin Skirt, $136">
+              <div class="product-card__media">
+                <img src="assets/img/product-glow-skirt-front.webp" alt="Glow Satin Midi Skirt in champagne" width="400" height="533">
+                <img src="assets/img/product-glow-skirt-movement.webp" alt="Glow Satin Skirt in motion" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Bottoms</span>
+                <h3 class="product-card__title">Glow Satin Skirt</h3>
+                <p class="product-card__price">$136</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="dresses">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Dusk Wrap Dress, $156">
+              <div class="product-card__media">
+                <img src="assets/img/product-dusk-dress-front.webp" alt="Dusk Wrap Dress in deep sage" width="400" height="533">
+                <img src="assets/img/product-dusk-dress-detail.webp" alt="Dusk Wrap Dress waist tie detail" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Dresses</span>
+                <h3 class="product-card__title">Dusk Wrap Dress</h3>
+                <p class="product-card__price">$156</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="tops">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Studio Tank, $68">
+              <div class="product-card__media">
+                <img src="assets/img/product-studio-tank-front.webp" alt="Studio Ribbed Tank in ivory" width="400" height="533">
+                <img src="assets/img/product-studio-tank-layered.webp" alt="Studio Tank layered under blazer" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Tops</span>
+                <h3 class="product-card__title">Studio Ribbed Tank</h3>
+                <p class="product-card__price">$68</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="bottoms">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Lane Denim, $128">
+              <div class="product-card__media">
+                <img src="assets/img/product-lane-denim-front.webp" alt="Lane High-Rise Denim in soft indigo" width="400" height="533">
+                <img src="assets/img/product-lane-denim-detail.webp" alt="Lane Denim stitching detail" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Bottoms</span>
+                <h3 class="product-card__title">Lane High-Rise Denim</h3>
+                <p class="product-card__price">$128</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="outerwear">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Harbor Trench, $248">
+              <div class="product-card__media">
+                <img src="assets/img/product-harbor-trench-front.webp" alt="Harbor Lightweight Trench in stone" width="400" height="533">
+                <img src="assets/img/product-harbor-trench-styled.webp" alt="Harbor Trench styled with scarf" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Outerwear</span>
+                <h3 class="product-card__title">Harbor Lightweight Trench</h3>
+                <p class="product-card__price">$248</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="dresses">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Noir Slip Dress, $174">
+              <div class="product-card__media">
+                <img src="assets/img/product-noir-slip-front.webp" alt="Noir Satin Slip Dress in black" width="400" height="533">
+                <img src="assets/img/product-noir-slip-detail.webp" alt="Noir Slip Dress adjustable strap detail" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Dresses</span>
+                <h3 class="product-card__title">Noir Satin Slip Dress</h3>
+                <p class="product-card__price">$174</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card" data-category="tops">
+            <a href="javascript:void(0)" class="product-card__link" aria-label="Garden Tee, $58">
+              <div class="product-card__media">
+                <img src="assets/img/product-garden-tee-front.webp" alt="Garden Cotton Tee in soft white" width="400" height="533">
+                <img src="assets/img/product-garden-tee-styled.webp" alt="Garden Tee tucked into trousers" width="400" height="533">
+                <div class="product-card__hover">
+                  <span class="product-card__quick">Quick View</span>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <span class="product-card__category">Tops</span>
+                <h3 class="product-card__title">Garden Cotton Tee</h3>
+                <p class="product-card__price">$58</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Juniper <span>Lane</span></p>
+          <p class="footer-tagline">Elevated essentials and curated collections for the modern woman.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-hours">
+          <h3>Boutique Hours</h3>
+          <p>Tuesday – Saturday: 10am – 6pm<br>Sunday: 12pm – 5pm<br>Monday: Closed</p>
+        </div>
+      </div>
+
+     <p class="footer-bottom"><a href="https://www.netavation.com" style="font-size: 10pt; text-decoration: none; padding: 20px;"><strong>WebCare&trade;</strong> by Netavation</a><br>
+&copy; 2026 Juniper Lane Boutique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

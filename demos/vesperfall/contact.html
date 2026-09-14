@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Vesperfall, request press assets, or reach Obsidian Rite Management. Official booking inquiry and social channels.">
+  <title>Contact — Vesperfall Booking &amp; Press</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Oswald:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body class="realm realm--contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="omen-bar">
+    <a class="sigil" href="index.html" aria-label="Vesperfall home">
+      <span class="sigil__mark" aria-hidden="true">V</span>
+      <span class="sigil__name">Vesperfall</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="omen-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="inquiry-rail">
+      <p class="kicker">Obsidian Rite Management</p>
+      <h1>Booking inquiry</h1>
+    </div>
+
+    <section class="booking-grid" aria-labelledby="inquiry-heading">
+      <form class="inquiry-form" data-booking-form novalidate>
+        <h2 id="inquiry-heading" class="kicker">Send the rite</h2>
+
+        <p class="inquiry-note" data-form-note tabindex="-1" hidden></p>
+
+        <div class="inquiry-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="inquiry-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="inquiry-field">
+          <label for="org">Organization</label>
+          <input id="org" name="organization" type="text" autocomplete="organization">
+        </div>
+
+        <div class="inquiry-field">
+          <label for="intent">Inquiry type</label>
+          <select id="intent" name="intent" required>
+            <option value="">Select</option>
+            <option value="booking">Festival / arena booking</option>
+            <option value="support">Support slot / tour offer</option>
+            <option value="press">Press / interview</option>
+            <option value="licensing">Sync / licensing</option>
+          </select>
+        </div>
+
+        <div class="inquiry-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="ember-btn">Transmit Inquiry</button>
+      </form>
+
+      <aside class="press-column">
+        <h2>Management</h2>
+        <address>
+          Obsidian Rite Management<br>
+          14 Furnace Walk<br>
+          Sheffield S1 2BX<br>
+          United Kingdom<br><br>
+          Booking: <a href="mailto:booking@vesperfall.com">booking@vesperfall.com</a><br>
+          Press: <a href="mailto:press@vesperfall.com">press@vesperfall.com</a><br>
+          <a href="tel:+441142555019">+44 114 255 5019</a>
+        </address>
+
+        <h3>Press</h3>
+        <ul class="metal-links">
+          <li><a href="music.html">Electronic press kit</a></li>
+          <li><a href="music.html">High-resolution album art</a></li>
+          <li><a href="about.html">Approved biography</a></li>
+        </ul>
+
+        <h3>Social</h3>
+        <ul class="social-row">
+          <li><a href="https://www.instagram.com/" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://open.spotify.com/" rel="noopener noreferrer">Spotify</a></li>
+          <li><a href="https://bandcamp.com/" rel="noopener noreferrer">Bandcamp</a></li>
+        </ul>
+
+        <figure class="contact-still">
+          <img src="assets/img/contact-venue-crowd.webp" alt="Arena crowd under gold and ember stage wash during a Vesperfall headline set" width="1200" height="750">
+        </figure>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="crypt">
+    <strong>Vesperfall</strong>
+    <nav aria-label="Footer">
+      <a href="music.html">Music</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Booking</a>
+    </nav>
+   <p><a href="https://www.netavation.com" style="font-size: 10pt; text-decoration: none; padding: 20px;"><strong>WebCare&trade;</strong> by Netavation</a></p>
+    <p>&copy; 2026 Vesperfall. Obsidian Rite Management.</p>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
