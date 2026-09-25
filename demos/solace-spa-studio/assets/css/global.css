@@ -157,7 +157,7 @@ address {
   min-height: var(--header-h);
   max-width: var(--measure);
   margin: 0 auto;
-  padding: 0.65rem var(--gutter);
+  padding: 0.65rem 0;
 }
 
 .wordmark {
