@@ -793,7 +793,6 @@ button {
 
 .page-mast__still img {
   width: 100%;
-  aspect-ratio: 16 / 10;
   object-fit: cover;
   background: #2a2d30;
 }

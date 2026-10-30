@@ -979,6 +979,10 @@ textarea {
   gap: 1.5rem;
 }
 
+.booking__facade {
+  margin: 0;
+}
+
 .booking__facade img {
   width: 100%;
   aspect-ratio: 4 / 3;
