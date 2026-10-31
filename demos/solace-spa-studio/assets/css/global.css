@@ -301,6 +301,10 @@ body:has(.nav-toggle:checked) {
   overflow: hidden;
 }
 
+@media (max-width: 64em) {
+ .wordmark { margin-left: 1rem; }
+}
+
 /* ── Shared UI ───────────────────────────────────────────────── */
 
 .quiet {
@@ -373,6 +377,10 @@ body:has(.nav-toggle:checked) {
 .wrap {
   width: min(100% - (var(--gutter) * 2), var(--measure));
   margin-inline: auto;
+}
+
+.wrap p {
+margin-top: 2rem;
 }
 
 .band-intro {
