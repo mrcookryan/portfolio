@@ -365,7 +365,7 @@ p + p {
   }
 
   .nav-toggle:checked ~ .site-nav {
-    max-height: 480px;
+    max-height: 560px;
     opacity: 1;
     visibility: visible;
   }
